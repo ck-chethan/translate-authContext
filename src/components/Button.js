@@ -22,7 +22,7 @@ export class Button extends Component {
             {(color)=>(
                 <button className={`ui button ${color==='red'? 'red':'primary'}`}>
                     <LanguageContext.Consumer>
-                        {(value) => value === 'english' ? 'Submit' : 'ಸಲ್ಲಿಸು'}
+                        {({language}) => language === 'english' ? 'Submit' : 'ಸಲ್ಲಿಸು'}
                     </LanguageContext.Consumer>
                 </button>
             )}  
